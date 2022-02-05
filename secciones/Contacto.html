@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/29bba2513c.js" crossorigin="anonymous"></script>
+    <!-- animatedcss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script defer src="../js/index.js"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header class='header'>
+        <nav class='nav'>
+           <!-- esto se comenta porque puede que se reutilize 
+             <a href="./index.html" class="logo nav-link">Logo</a> -->
+            <a href="./index.html" class="img-nav-logo">
+                <img src="../img/arcade-font-writer.png" alt="" width="250">
+            </a>
+            <button class="nav-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class='nav-menu '>
+                <li class="nav-menu-item ">
+                    <a href='./secciones/Anime.html' class='nav-menu-link nav-link'>Anime</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href='./secciones/Manga.html' class='nav-menu-link nav-link'>Manga</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href='./secciones/VideoJuegos.html' class='nav-menu-link nav-link'>Video Juegos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href='./secciones/Contacto.html' class='nav-menu-link nav-link'>Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- formulario -->
+<div class="formulario-content">
+    <h1 class="formulario-logo"> Contacto</h1>
+    <div class="formulario-content-wrapper">
+        <!-- contact form -->
+        <div class="contact-form">
+            <h3>Contactanos</h3>
+            <form action="">
+                <p>
+                    <label for="fullname">Nombre Completo</label>
+                    <input type="text" name='fullname' id="fullname">
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Telefono</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Asunto</label>
+                    <input type="text" name="affair"> 
+                </p>
+                <p class="block">
+                    <label>Mensaje</label>
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
+<!-- contact info -->
+<div class="contact-info">
+    <h4>mas informacion</h4>
+    <ul>
+        <li><i class="fas fa-map-marker-alt"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li><i class="fas fa-phone"></i>111 111 111 111 </li>
+        <li><i class="fas fa-envelope-open-text"></i>contact@mail.com</li>
+    </ul>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero earum, cupiditate soluta aliquam repellat id aliquid perferendis recusandae cumque quae.
+    </p>
+    <p>Comapany.com</p>
+</div>
+    </div>
+
+
+</div>
+
+<!-- pie de pagina -->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="../index.html">
+                    <img src="../arcade-font-writer.png" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, earum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, earum.</p>
+        </div>
+        <div class="box">
+            <h2>Redes sociales</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/fer.medellin.cuevas" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/fer0osennin/ " class="fa fa-instagram"></a>
+                <a href="https://twitter.com/fer0osennin" class="fa fa-twitter"></a>
+                <a href="https://github.com/fer0o" class="fa fa-github"></a>
+            </div>
+        </div>
+    </div>
+    <!-- fin grupo-1 -->
+    <div class="grupo-2">
+        <small> &copy; 2022 <b>Fernando Medellín Cuevas fer0o</b>- Todos los Derechos Reservados</small>
+    </div>
+</footer>
+</body>
+</html>
