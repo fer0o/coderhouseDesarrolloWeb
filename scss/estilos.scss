@@ -177,6 +177,7 @@ font-weight: bold;
 .pie-pagina{
     width: 100%;
     background-color: #48069e;
+    margin-top: 2em;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -310,6 +311,7 @@ font-weight: bold;
     padding-right: .5rem;
 }
 /* large size */
+// cambio con sass
 @media (min-width:778px){
     .formulario-content-wrapper{
         display: grid;
