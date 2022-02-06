@@ -1,3 +1,60 @@
+.cards {
+  padding-top: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(225px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 30px;
+  font-family: sans-serif;
+}
+
+.cards .card {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.cards .card-image {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards .card-content {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  padding: 15px;
+  background: #e7e4e4;
+}
+
+.cards .card-content span {
+  color: black;
+  font-weight: bold;
+}
+
+.cards .card-content p {
+  margin: 0;
+}
+
+.cards .card-info {
+  margin-top: 5px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #eeee;
+  font-size: 0.8rem;
+  border-bottom: 2px solid #cccc;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -149,68 +206,9 @@ body {
   font-weight: bold;
 }
 
-.cards {
-  padding-top: 30px;
-  margin: 0 auto;
-  max-width: 1200px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(225px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-  gap: 30px;
-  font-family: sans-serif;
-}
-
-.card {
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-}
-
-.card-image {
-  width: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card-content {
-  line-height: 1.5;
-  font-size: 0.9rem;
-  padding: 15px;
-  background: #e7e4e4;
-}
-
-/* .card-content > p :first-of-type{
-margin-top: 0;
-font-weight: bold;
-}
-.card-content > p:last-of-type{
-    margin-bottom: 0;
-}  */
-.card-content span {
-  color: black;
-  font-weight: bold;
-}
-
-.card-content p {
-  margin: 0;
-}
-
-.card-info {
-  margin-top: 5px;
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #eeee;
-  font-size: 0.8rem;
-  border-bottom: 2px solid #cccc;
+.section-2 {
+  background-color: #f3eff5;
+  margin-top: 1em;
 }
 
 /* footer */
