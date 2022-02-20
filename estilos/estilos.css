@@ -70,7 +70,7 @@ body {
 .header {
   background-color: #670DDA;
   height: 90px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -137,7 +137,7 @@ body {
   display: none;
 }
 
-@media (max-width: 778px) {
+@media (max-width: 863px) {
   body {
     padding-top: 90px;
   }
@@ -197,18 +197,148 @@ body {
   font-weight: bold;
   font-family: sans-serif;
   margin-bottom: 10px;
+  padding-top: 1em;
 }
 
 .span-index {
-  font-size: 14px;
+  font-size: 20px;
   color: gray;
   font-family: sans-serif;
   font-weight: bold;
+  padding-top: 1em;
 }
 
 .section-2 {
   background-color: #f3eff5;
   margin-top: 1em;
+}
+/* slider */
+.section-slider{
+  padding-top: 10px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider{
+  position: absolute;
+  background: #000116;
+  width: 800px;
+  min-height: 500px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+.slider .slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+.slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+}
+
+
+.slider .slide img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .slide .info-slide {
+  position: absolute;
+  color: #222;
+  background: rgba(241, 232, 232, 0.753);
+  width: 75%;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 20px;
+  border-radius: 5px ;
+  box-shadow: 0 5px 25px rgb(1 1 1 /5%);
+}
+.slider .slide  .info-slide h2 {
+  font-size: 2em;
+  font-weight: 800;
+}
+.slider .slide .info-slide p{
+  font-size: 1em;
+  font-style: 400;
+  padding-bottom: 1em;
+}
+/* slider navigation */
+.navigation{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.slider:hover .navigation{
+  opacity: 1;
+}
+.button1{
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255,255,255,0.8);
+  padding: 10px;
+  cursor: pointer;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.button2{
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255,255,255,0.8);
+  padding: 10px;
+  cursor: pointer;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.navigation-visibility{
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+.navigation-visibility .slide-icon{
+  z-index: 999;
+  background: rgba(255,255,255,0.5);
+  width: 20px;
+  height: 10px;
+  transform: translateY(-50px);
+  margin: 0 6px;
+  border-radius: 2px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active{
+  background:#48069e ;
+}
+@media(max-width: 840px){
+  .slider{
+    width: 70%;
+  }
+  .slider .slide .info-slide{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media(max-width :800px){
+  .slider .slide .info-slide h2{
+    font-size: 1.8em;
+    line-height: 40px;
+  }
+  .slider .slide .info-slide p{
+    font-size: 0.9em;
+    padding-bottom: 1em;
+  }
 }
 
 /* footer */
@@ -390,7 +520,7 @@ body {
 }
 
 /* large size */
-@media (min-width: 778px) {
+@media (min-width: 863px) {
   .formulario-content-wrapper {
     display: -ms-grid;
     display: grid;
