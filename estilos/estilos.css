@@ -223,8 +223,8 @@ body {
 }
 @media (orientation: landscape) {
   .section-slider{
-    padding-top: 220px;
-    margin-bottom: 220px;
+    padding-top: 300px;
+    margin-bottom: 300px;
     height: 80vh;
     display: flex;
     justify-content: center;
