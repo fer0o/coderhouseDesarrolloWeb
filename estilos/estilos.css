@@ -199,7 +199,7 @@ body {
   font-weight: bold;
   font-family: sans-serif;
   margin-bottom: 10px;
-  padding-top: 1em;
+  
 }
 
 .span-index {
@@ -207,7 +207,6 @@ body {
   color: gray;
   font-family: sans-serif;
   font-weight: bold;
-  padding-top: 1em;
 }
 
 .section-2 {
@@ -221,6 +220,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (orientation: landscape) {
+  .section-slider{
+    padding-top: 220px;
+    margin-bottom: 220px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .slider{
   position: absolute;
