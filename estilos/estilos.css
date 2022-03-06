@@ -240,6 +240,18 @@ background-size: cover;
 background-repeat: no-repeat;
 border-radius: 1em;
 }
+@media (min-width:300px){
+  .banner-container-anime{
+width: 100%;
+height: 30vh;
+  }
+}
+@media (orientation: landscape) {
+  .banner-container-anime{
+width: 100%;
+height: 70vh;
+  }
+}
 
 .text-banner-anime{
 display: block;
