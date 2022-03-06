@@ -208,8 +208,6 @@ body {
   display: flex;
   justify-content: center;
   background-image: url("../img/webps/banner-images/banner-anime.webp");
-  width: 100%;
-  height: 45vh;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1em;
@@ -227,21 +225,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-/* end section banner with image (Anime)  */
-
-/* start for section with image and banner image properties (Manga)  */
-.banner-container-anime{
-margin-top: 1rem;
-margin-bottom: 1rem;
-background-image: url("../img/webps/banner-images/banner-anime.webp");
-width: 100%;
-height: 35vh;
-background-size: cover;
-background-repeat: no-repeat;
-border-radius: 1em;
-}
 @media (min-width:300px){
-  .banner-container-anime{
+.banner-container-anime{
 width: 100%;
 height: 30vh;
   }
@@ -249,23 +234,49 @@ height: 30vh;
 @media (orientation: landscape) {
   .banner-container-anime{
 width: 100%;
-height: 70vh;
+height: 50vh;
   }
 }
+/* end section banner with image (Anime)  */
 
-.text-banner-anime{
-display: block;
-position: relative;
-align-content: center;
-margin: auto;
-color: #000000;
+/* section for banners for manga */
+.banner-container-manga{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/webps/banner-images/banner-manga.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1em;
 }
-.text-banner-anime h1{
-display: flex;
-align-items: center;
-justify-content: center;
+
+.text-banner-manga{
+  display: block;
+  position: relative;
+  align-content: center;
+  margin: auto;
+  color: #000000;
 }
-/* section for banners */
+.text-banner-manga h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width:300px){
+.banner-container-manga{
+width: 100%;
+height: 30vh;
+  }
+}
+@media (orientation: landscape) {
+  .banner-container-manga{
+width: 100%;
+height: 50vh;
+  }
+}
+/* end section banner with image (manga)  */
+
 
 .span-index {
   font-size: 20px;
