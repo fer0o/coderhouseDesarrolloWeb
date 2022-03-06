@@ -1,0 +1,64 @@
+.cuadrado-1 {
+  background-color: #1124f0;
+  width: 300px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.cuadrado-2 {
+  background-color: rgba(206, 23, 23, 0.133);
+  width: 200px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.cuadrado-3 {
+  background-color: #cece08;
+  width: 600px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.alert, .error, .accesso {
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #fff;
+  background: #67e24f;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10 px;
+  -webkit-box-shadow: 10px;
+  -moz-box-shadow: 10px;
+}
+
+.error, .accesso {
+  background: #eb3108;
+  font-size: 10px;
+}
+
+.accesso {
+  background-color: #46b6ea;
+}
+
+.cancelar, .enviar {
+  padding: 10px;
+  color: #fff;
+  background-color: blue;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+h2 {
+  color: #70ec70;
+}
+/*# sourceMappingURL=styleSASS.css.map */
