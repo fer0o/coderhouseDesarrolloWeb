@@ -191,7 +191,7 @@ body {
 }
 
 .section-index {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .header-index {
@@ -200,12 +200,15 @@ body {
   font-family: sans-serif;
   margin-bottom: 10px;
   
+  
 }
 /* section for banners */
 .banner-container-anime{
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
+  width: 100%;
+  height: 50vh !important;
   justify-content: center;
   background-image: url("../img/webps/banner-images/banner-anime.webp");
   background-size: cover;
@@ -228,13 +231,13 @@ body {
 @media (min-width:300px){
 .banner-container-anime{
 width: 100%;
-height: 30vh;
+height: 30vh !important;
   }
 }
 @media (orientation: landscape) {
   .banner-container-anime{
 width: 100%;
-height: 50vh;
+height: 45vh;
   }
 }
 /* end section banner with image (Anime)  */
@@ -314,7 +317,71 @@ height: 50vh;
 }
 /* end section banner with image (manga)  */
 
+/* start secction for vg cards  */
+.vg-box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+  
+  
+}
 
+ .vg-box{
+   flex: 1 1 300px;
+   background: #fff;
+   position: relative;
+   overflow: hidden;
+   margin: 20px;
+   border: solid  1px rgb(2, 2, 2);
+   border-radius: 10px;
+   box-shadow: 10px 5px 5px rgb(148, 5, 243);
+ } 
+.vg-box .vg-image{
+  padding: 10px;
+  text-align: center;
+}
+.vg-box .vg-image img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  filter:drop-shadow(0 3px 5px rgba(0,0,0,0.7));
+  margin-top: 10px;
+  border: solid  1px rgb(2, 2, 2);
+  box-shadow: 5px 1px 5px 1px rgb(12, 12, 12);
+}
+.vg-box .vg-info .vg-title{
+  padding: 20px;
+  color: rgb(8, 8, 8);
+  font-size: 20px;
+  
+}
+.vg-box .vg-info .vg-sub-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  flex-wrap: wrap;
+  
+  
+}
+.vg-box .vg-info .vg-sub-info .vg-price span{
+  font-size: 15px;
+  color: #999;
+}
+.vg-box .vg-info .vg-sub-info .vg-starts i {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.vg-box .vg-overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* finish section for vg cards */
 .span-index {
   font-size: 20px;
   color: gray;
@@ -324,7 +391,7 @@ height: 50vh;
 
 .section-2 {
   background-color: #f3eff5;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 /* slider */
 .section-slider{
