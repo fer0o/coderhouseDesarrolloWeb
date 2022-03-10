@@ -191,7 +191,15 @@ body {
 }
 
 .section-index {
-  margin-top: 40px;
+  margin-top: 2em;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+.section-2 {
+  background-color: #faf7fb;
+  margin-top: 2em;
+  padding-top: 2rem;
+  padding-left: 1rem;
 }
 
 .header-index {
@@ -199,11 +207,6 @@ body {
   font-weight: bold;
   font-family: sans-serif;
   margin-bottom: 10px;
-  
-  
-}
-.vg-section-index{
-  padding-top: 2rem;
 }
 /* section for banners */
 .banner-container-anime{
@@ -392,10 +395,7 @@ height: 50vh;
   font-weight: bold;
 }
 
-.section-2 {
-  background-color: #faf7fb;
-  margin-top: 2em;
-}
+
 /* slider */
 .section-slider{
   padding-top: 10px;
