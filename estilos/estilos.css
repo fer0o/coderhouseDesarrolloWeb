@@ -126,13 +126,14 @@ body {
 }
 
 .nav-toggle {
-  color: white;
+  color: black;
   background: none;
   border: none;
-  font-size: 40px;
+  font-size: 30px;
   padding: 0 30;
   line-height: 60px;
   margin-right: 20px;
+  margin-top: -10px;
   cursor: pointer;
   display: none;
 }
